@@ -1,0 +1,88 @@
+<html>
+<title>
+'Welcome to counter'
+</title>
+<body>
+<h1 id='output'></h1>
+<button id='upBtn'>UP</button>
+<button id='downBtn'>DOWN</button>
+<button id='reset'>RESET</button>
+
+<script>
+const outHandle = document.getElementById('output')
+const upHandle = document.getElementById('upBtn')
+const downHandle = document.getElementById('downBtn')
+const reset = document.getElementById('reset')
+
+const counter = {
+count :0,
+
+'getValue': function(){
+    return this.count;
+
+},
+'up': function(){
+    this.count=this.count+1
+    return this.count;
+},
+'down': function(){
+if(this.count===0){
+    
+    this.count=0;
+    
+}else{
+    this.count = this.count-1;
+    
+}
+return this.count
+
+},
+'reset': function(){
+    this.count =0;
+    return this.count;
+},
+'upBy': function(n){
+    this.count = this.count+n;
+    return this.count
+}
+}
+outHandle.innerHTML=counter.getValue() // set intial value
+
+upHandle.addEventListener('click',function(){
+counter.up();
+outHandle.innerHTML=counter.getValue();
+})
+
+downHandle.addEventListener('click',function(){
+
+    counter.down()
+    outHandle.innerHTML=counter.getValue();
+})
+    
+    
+   
+
+
+
+reset.addEventListener('click',function(){
+counter.reset();
+outHandle.innerHTML=counter.getValue();
+
+})
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>
