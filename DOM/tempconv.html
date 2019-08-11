@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <titl>"Farenhiet to Celsius"</titl>
+    </head>
+    <body>
+        <div id='root'>
+        <form>
+            <label>
+                Farenhiet: <input type="number" id='fid'/></label>
+            </label></br></br>
+            <label>
+                Celsius : <input type="number" id='cid'/>
+            </label></br></br>
+            <input type='submit' name="CONVERT" id='subid'/>
+        </form>
+    </div>
+
+        <script>
+        const rooth = document.getElementById('root');
+        const fhandle = document.getElementById('fid');
+        const chandle = document.getElementById('cid');
+        const btnid = document.getElementById('subid');
+        
+        btnid.addEventListener('onclick',function(){
+            var far = fhandle.innerText;
+            var cel = chandle.innerText;
+            var res = (9/5*cel)+32
+            chandle.innerText = res;
+
+        })
+        </script>
+
+    </body>
+</html>

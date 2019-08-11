@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+</head>
+<body>
+    <div id='root'>
+        <h1 id='h1id'>"Hi There World!"</h1>
+        <button id='btnid'>HashTagGen</button>
+    </div>
+
+<script>
+
+const roothandle = document.getElementById('root')
+const h1h= document.getElementById('h1id');
+const bth = document.getElementById('btnid');
+
+bth.addEventListener('click',function(){
+const str =h1h.innerHTML;
+const hasher = '#';
+let output = str.split(' ');
+output.forEach(function(word){
+hasher=hasher+word.charAt(0).toUpperCase()+word.slice(1).toLowerCase();
+} 
+)
+h1h.innerHTML=hasher;
+})
+
+</script>
+</body>
+</html>

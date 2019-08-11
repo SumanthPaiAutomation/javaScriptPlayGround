@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+</head>
+<body>
+    <div id='root'>
+
+    </div>
+
+    <script>
+        const rooth = document.getElementById('root');
+        const social =[
+                        {id:1,name:'Facebook',url:'www.facebook.com'},
+                        {id:2,name:'google',url:'www.google.com'},
+                        {id:3,name:'yahoo',url:'www.yahoo.com'}
+
+        ]
+const ul = document.createElement('ul')
+function limaker (text){
+const li = document.createElement('li');
+li.textContent=text;
+ul.appendChild(li);
+}
+for (var i=0;i<=social.length;i++){
+    limaker(social[i].name)
+}
+rooth.appendChild(ul);
+
+    </script>
+
+</body>
+</html>

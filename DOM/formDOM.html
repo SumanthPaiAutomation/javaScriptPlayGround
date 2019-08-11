@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>'Form Event Handlers'</title>
+    </head>
+    <body>
+        <div id='root'>
+            <form>
+                <h1>'LOGIN'</h1>
+                <label>
+                    Email
+                    <input type="text" id='emailid'/>
+                </label></br>
+                <label>
+                       Password
+                        <input type="password" id='pwdid'/>
+                    </label></br>
+                    <label>ShowPassword<input type="checkbox" id='showpwd'/></label></br>
+                <input type="submit"\>
+    
+            </form>
+
+        </div>
+    <script>
+    const roothandle = document.getElementById('root');
+    const emailhandle = document.getElementById('emailid');
+    const pwdhandle = document.getElementById('pwdid');
+    const shwpwd = document.getElementById('showpwd');
+    shwpwd.addEventListener('click',function(){
+if(shwpwd.checked){
+    shwpwd.setAttribute('type','text');
+}else{
+    shwpwd.setAttribute('type','password');
+}
+})
+    
+    </script>
+    </body>
+</html>

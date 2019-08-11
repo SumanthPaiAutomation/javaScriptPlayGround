@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>'Counting Your Text'</title>
+</head>
+<body>
+    <div id='root'>
+        <form id='formid'>
+            <textarea id='taid'></textarea>
+        </form></br>
+        <h6>the total characters typed : <span id='spid'>  </span> , the total words typed:  <span id='wordid'></span> </h6>
+    </div>
+    <script>
+        const rooth = document.getElementById('root');
+        const tah = document.getElementById('taid');
+        const spanh = document.getElementById('spid')
+        const spanword = document.getElementById('wordid');
+        tah.addEventListener('keyup',function(){
+            const str = tah.value;
+            const result = str.length;
+            const strwords = tah.value;
+            const output = strwords.split(' ');
+            spid.textContent = result;
+            wordid.textContent =(output.length)-1;
+
+        })
+
+    </script>
+</body>
+</html>

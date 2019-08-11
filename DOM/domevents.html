@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+</head>
+<body>
+    <div id='root'>
+        <h1 id='h1id'>"Hi There World!"</h1>
+        <button id='btnid'>Click Me</button>
+    </div>
+
+<script>
+
+const roothandle = document.getElementById('root')
+const h1h= document.getElementById('h1id');
+const bth = document.getElementById('btnid');
+
+bth.addEventListener('click',function(){
+const str =h1h.innerHTML;
+const strupper = str.toUpperCase();
+h1h.innerHTML=strupper;
+
+})
+
+</script>
+</body>
+</html>
