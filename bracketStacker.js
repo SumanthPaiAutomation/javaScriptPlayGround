@@ -1,0 +1,1 @@
+let myStack = new Stack()
