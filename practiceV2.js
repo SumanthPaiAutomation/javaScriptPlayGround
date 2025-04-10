@@ -136,3 +136,36 @@ console.log(rotateArray([1, 2, 3, 4, 5], 2, "right"));  // Output: [4, 5, 1, 2, 
 
 // 📝 Testing Left Rotation
 console.log(rotateArray([1, 2, 3, 4, 5], 2, "left"));   // Output: [3, 4, 5, 1, 2]
+
+let str = "Hello";
+console.log(str.at(1));   // Output: "e"
+console.log(str.at(-1));  // Output: "o"
+
+let arr = [10, 20, 30, 40, 50];
+console.log(arr.at(2));   // Output: 30
+console.log(arr.at(-1)); 
+
+//const shadowButton = await page.evaluateHandle(() => {
+ //   const el = document.querySelector('my-component');
+ //   return el.shadowRoot.querySelector('button');
+ // });
+ // await shadowButton.click();
+
+ //// Click that opens a new tab
+// const [newPage] = await Promise.all([
+//     page.context().waitForEvent('page'), // Waits for new tab
+//     page.click('a[target="_blank"]')     // Triggers the tab
+//   ]);
+  
+//   await newPage.waitForLoadState();
+//   await newPage.locator('h1').textContent(); // Interact with new tab
+
+// const context = await browser.newContext();
+// const page1 = await context.newPage();
+// await page1.goto('https://example.com');
+
+// const page2 = await context.newPage();
+// await page2.goto('https://google.com');
+
+// // Switch to second tab and search
+// await page2.locator('input[name="q"]').fill('Playwright');
